@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background: #6a4c9c;
+    color: white;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+tr:hover{
+    background-color: rgba(161, 255, 188, 0.669);
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+.btn-wrapper {
+    display: flex;
+}
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;  
+    color: white;
+    border-radius: 8px;  
+    font-size: 16px;    
+    font-weight: bold;
+    display: inline-block; 
+    text-align: center;   
+    cursor: pointer;      
+    transition: background 0.3s ease;
+    border: none;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+
+.add-record {
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 5px; 
+    
+}
+.add{
+    background: #28a745;
+}
+
+.add:hover{
+    
+    background: #218838;
+}
+
+.view {
+    background: #4da8da;
+}
+
+.view:hover {
+    background: #3991c4;
+    
+}
+
+.edit {
+    background: #0056b3;
+}
+
+.edit:hover {
+    background: #004099;
+    
+}
+
+.delete {
+    background: #d9534f;
+}
+
+.delete:hover {
+    background: #c9302c;
+    
+}

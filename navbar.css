@@ -1,0 +1,90 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #6a4c9c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 90px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: width 0.4s ease-in-out;
+}
+.navbar:hover {
+    width: 250px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.navbar-links div {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+.navbar-links i {
+    font-size: 20px;
+}
+.navbar-links span {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+}
+.navbar:hover .navbar-links span {
+    opacity: 1;
+}
+#dashboard:hover, #account:hover, #college:hover, #position:hover, #event:hover, #logout:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+#logout {
+    margin-top: 200%;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    margin-left: 100px; /* Default margin when collapsed */
+    padding: 20px;
+    transition: margin-left 0.4s ease-in-out;
+    width: calc(100% - 100px);
+}
+.navbar:hover ~ .content {
+    margin-left: 260px; /* Adjust when navbar expands */
+    width: calc(100% - 260px);
+}
+
+#bg-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(62, 62, 62, 0.607);
+    display: none;
+}
+#modal {
+    width: 70%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: none;
+}

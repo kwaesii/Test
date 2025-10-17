@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-card {
+    background: white;
+    width: 380px; 
+    min-height: 560px; 
+    border-radius: 30px;
+    border: 3px solid #6a4c9c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin: 20px auto; 
+}
+
+.top-section {
+    background: #6a4c9c;
+    height: 170px;
+    padding: 30px 20px 50px; 
+    position: relative;
+    height: 120px;
+}
+
+.top-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 7px solid #6a4c9c; 
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover; 
+    background: #f4f4f4;
+    font-family: Tahoma;
+}
+
+.bot-section {
+    background: white;
+    padding: 70px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+h2 {
+    color: #222;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -35px;
+}
+
+p.college {
+    font-size: 13px;
+    font-style: italic;
+    color: #000000;
+    margin-top: -10px;
+}
+
+p.jersey, p.position, #jersey, #pposition {
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+}
+
+p.position {
+    margin-top: -5px;
+}
+#jersey, #pposition {
+    font-style: italic;
+    color: #000000;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+p.jersey strong, p.position strong {
+    display: block;
+    color: #553d7d;
+}
+
+button#close {
+    background: #6a4c9c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    left: auto;
+    right: 15px;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+button#close:hover {
+    background: #a274ec;
+}
+
+/* Additional styles for better spacing */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stat-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+.card {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    min-width: 90px;
+}
+.attacks { background-color: #295F98; }
+.blocks { background-color: #F16767; }
+.aces { background-color: #7BC0A3; }
+canvas {
+    max-width: 95%;
+    margin: auto;
+}
